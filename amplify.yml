@@ -1,0 +1,19 @@
+version: 1
+applications:
+  - frontend:
+      buildPath: '/'  # run install and build from monorepo project root
+      phases:
+        preBuild:
+          commands:
+            - npm install
+        build:
+          commands:
+            - npm run build --workspace=backoffice
+      artifacts:
+        baseDirectory: apps/backoffice
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - node_modules/**/*
+    appRoot: packages/shared-backend
