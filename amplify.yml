@@ -1,6 +1,7 @@
 version: 1
 applications:
-  - backoffice:
+  - appRoot: /packages/shared-backend
+    backoffice:
       buildPath: '/'  # run install and build from monorepo project root
       phases:
         preBuild:
@@ -16,4 +17,4 @@ applications:
       cache:
         paths:
           - node_modules/**/*
-    appRoot: /packages/shared-backend
+    
