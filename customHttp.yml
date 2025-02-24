@@ -1,5 +1,5 @@
 applications:
-  - frontend:
+  - backoffice:
     customHeaders:
       - pattern: '**/*.html'
         headers:
