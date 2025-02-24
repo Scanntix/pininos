@@ -1,6 +1,8 @@
 version: 1
 applications:
-  - appRoot: /packages/shared-backend
+  - appRoot: shared-backend
+    shared-backend:
+      buildPath: '/'
     backoffice:
       buildPath: '/'  # run install and build from monorepo project root
       phases:
