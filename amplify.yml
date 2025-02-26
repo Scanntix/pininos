@@ -1,6 +1,7 @@
 version: 1
 applications:
-  - backoffice:
+  - appRoot: apps/backoffice
+    backoffice:
       buildPath: '/'  # run install and build from monorepo project root
       phases:
         preBuild:
