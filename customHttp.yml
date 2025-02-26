@@ -1,5 +1,5 @@
 applications:
-  - backoffice:
+  - appRoot: apps/backoffice
     customHeaders:
       - pattern: '**/*.html'
         headers:
